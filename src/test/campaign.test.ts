@@ -110,9 +110,7 @@ describe("Educational rules", () => {
     );
   });
   it("cites the historical Olweus reference for the 1973 milestone", () => {
-    expect(historyMilestones.find(({ year }) => year === "1973")?.sourceId).toBe(
-      "olweus-history",
-    );
+    expect(historyMilestones.find(({ year }) => year === "1973")?.sourceId).toBe("olweus-history");
     expect(historySources.find(({ id }) => id === "olweus-history")?.url).toBe(
       "https://clemsonolweus.org/documents/OBPP%20Funding%20Toolkit.pdf",
     );
