@@ -24,6 +24,12 @@ export const historySources = [
     description: "Kontributi i Dan Olweus dhe historia e kërkimit të tij.",
   },
   {
+    id: "olweus-history",
+    name: "Clemson Olweus — OBPP Funding Toolkit (PDF)",
+    url: "https://clemsonolweus.org/documents/OBPP%20Funding%20Toolkit.pdf",
+    description: "Historia e programit Olweus dhe botimi suedez i vitit 1973.",
+  },
+  {
     id: "norway",
     name: "Norwegian Government — NOU 2015:2, chapter 3",
     url: "https://www.regjeringen.no/no/dokumenter/nou-2015-2/id2400765/?ch=3",
@@ -45,6 +51,7 @@ export const historyMilestones: {
   summary: string;
   detail: string;
   sourceId: HistorySourceId;
+  additionalSourceIds?: HistorySourceId[];
 }[] = [
   {
     year: "1970",
@@ -56,11 +63,11 @@ export const historyMilestones: {
   },
   {
     year: "1973",
-    title: "Rezultatet botohen në Skandinavi",
-    summary: "Kërkimi i Olweus botohet në Skandinavi dhe i jep dukurisë një bazë të dokumentuar.",
+    title: "Olweus boton në Suedi",
+    summary: "Puna e Olweus mbi bullizmin dhe marrëdhëniet mes nxënësve botohet në Suedi.",
     detail:
-      "Botimi trajtonte agresionin dhe marrëdhëniet mes nxënësve, duke e bërë më të lehtë diskutimin dhe studimin e bullizmit.",
-    sourceId: "olweus",
+      "Botimi suedez i vitit 1973 është pjesë e historisë së kërkimit të Olweus dhe të zhvillimit të programit të tij të parandalimit.",
+    sourceId: "olweus-history",
   },
   {
     year: "1978",
@@ -72,20 +79,14 @@ export const historyMilestones: {
     sourceId: "olweus",
   },
   {
-    year: "1983",
-    title: "Norvegjia nis një fushatë kombëtare",
-    summary: "Shqetësimi për bullizmin çon në një përpjekje të organizuar në shkallë kombëtare.",
-    detail:
-      "Fushata e drejtoi vëmendjen te mënyra si shkollat mund ta dallonin bullizmin dhe të ndërhynin për ta parandaluar.",
-    sourceId: "norway",
-  },
-  {
     year: "1983–1984",
-    title: "Përpjekjet mbërrijnë në shkolla",
-    summary: "Shkollat përfshihen përmes materialeve informuese dhe masave për parandalim.",
+    title: "Norvegjia nis fushatën e parë kombëtare.",
+    summary:
+      "Gjatë vitit shkollor 1983–1984 u zhvillua fushata e parë kombëtare kundër bullizmit në Norvegji. Shkollave iu dërgua broshura informuese Mobbing – bakgrunn og tiltak, e përgatitur nga Dan Olweus dhe Erling Roland.",
     detail:
-      "Në këtë periudhë u zhvillua edhe Programi i Parandalimit të Bullizmit Olweus, me qasje që përfshin shkollën, klasat, mësuesit, familjet dhe nxënësit.",
-    sourceId: "olweus-program",
+      "Programi i Parandalimit të Bullizmit Olweus u zhvillua në vitin 1983. Referenca historike e programit dokumenton edhe botimin suedez të vitit 1973.",
+    sourceId: "norway",
+    additionalSourceIds: ["olweus-history"],
   },
   {
     year: "2019",

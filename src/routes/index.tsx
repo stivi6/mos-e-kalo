@@ -54,7 +54,7 @@ function Home() {
           <div className="hero-bottom">
             <span>
               <MousePointer2 size={15} />
-              <strong>3 histori interaktive</strong> · vendime me pasoja reale
+              <strong>3 histori interaktive</strong> · zgjedhje që ndryshojnë rrjedhën e historive
             </span>
             <span>
               Një mjedis më i sigurt fillon me ne. <ArrowDown size={15} />

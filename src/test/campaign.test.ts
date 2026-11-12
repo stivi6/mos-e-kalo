@@ -91,12 +91,32 @@ describe("Educational rules", () => {
       "1970",
       "1973",
       "1978",
-      "1983",
       "1983–1984",
       "2019",
       "2020",
       "SOT",
     ]));
+  it("merges the Norway campaign into one correctly sourced milestone", () => {
+    const norwayMilestones = historyMilestones.filter(({ year }) => year.startsWith("1983"));
+    expect(norwayMilestones).toHaveLength(1);
+    expect(norwayMilestones[0]).toMatchObject({
+      year: "1983–1984",
+      title: "Norvegjia nis fushatën e parë kombëtare.",
+      sourceId: "norway",
+      additionalSourceIds: ["olweus-history"],
+    });
+    expect(norwayMilestones[0]?.summary).toBe(
+      "Gjatë vitit shkollor 1983–1984 u zhvillua fushata e parë kombëtare kundër bullizmit në Norvegji. Shkollave iu dërgua broshura informuese Mobbing – bakgrunn og tiltak, e përgatitur nga Dan Olweus dhe Erling Roland.",
+    );
+  });
+  it("cites the historical Olweus reference for the 1973 milestone", () => {
+    expect(historyMilestones.find(({ year }) => year === "1973")?.sourceId).toBe(
+      "olweus-history",
+    );
+    expect(historySources.find(({ id }) => id === "olweus-history")?.url).toBe(
+      "https://clemsonolweus.org/documents/OBPP%20Funding%20Toolkit.pdf",
+    );
+  });
   it("provides sources for the timeline milestones", () =>
     expect(
       historyMilestones.every(({ sourceId }) => historySources.some(({ id }) => id === sourceId)),

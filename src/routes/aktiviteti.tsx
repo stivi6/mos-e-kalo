@@ -118,9 +118,9 @@ function HistoryPage() {
               e bullizmit. Studimi përfshiu rreth 1 000 djem në Stokholm të Suedisë.
             </p>
             <p>
-              Rezultatet u botuan në Skandinavi në vitin 1973, në një libër që trajtonte agresionin
-              dhe marrëdhëniet mes nxënësve. Më vonë, në vitin 1978, libri u botua në Shtetet e
-              Bashkuara me titullin <em>Aggression in the Schools: Bullies and Whipping Boys</em>.
+              Puna e Olweus mbi bullizmin dhe marrëdhëniet mes nxënësve u botua në Suedi në vitin
+              1973. Më vonë, në vitin 1978, libri u botua në Shtetet e Bashkuara me titullin{" "}
+              <em>Aggression in the Schools: Bullies and Whipping Boys</em>.
             </p>
             <p>
               Puna e Olweus ndihmoi në krijimin e një baze shkencore për të kuptuar bullizmin si një
@@ -145,7 +145,8 @@ function HistoryPage() {
               duhej kuptuar dhe parandaluar.
             </blockquote>
             <p className="history-source-inline">
-              Burimi: <HistorySource id="olweus" />
+              Burimet: <HistorySource id="olweus" label="PubMed" /> dhe{" "}
+              <HistorySource id="olweus-history" label="historiku i programit Olweus" />
             </p>
           </div>
         </div>
@@ -160,17 +161,17 @@ function HistoryPage() {
               Në Norvegji, shqetësimi për bullizmin në shkolla çoi në një reagim më të organizuar.
             </p>
             <p>
-              Në vitin 1983, pas rasteve tragjike që tronditën vendin dhe tërhoqën vëmendjen te
-              pasojat e bullizmit, u ndërmor një fushatë kombëtare kundër bullizmit në shkolla.
+              Gjatë vitit shkollor 1983–1984, pas rasteve tragjike që tronditën vendin dhe tërhoqën
+              vëmendjen te pasojat e bullizmit, u zhvillua fushata e parë kombëtare kundër bullizmit
+              në shkolla.
             </p>
             <p>
               Shkollave iu shpërndanë materiale informuese që shpjegonin çfarë ishte bullizmi, si
               mund të dallohej dhe çfarë masash mund të merreshin për ta parandaluar.
             </p>
             <p>
-              Në këtë periudhë u zhvillua edhe Programi i Parandalimit të Bullizmit Olweus, i cili
-              synonte të përfshinte të gjithë komunitetin shkollor në krijimin e një mjedisi më të
-              sigurt.
+              Në vitin 1983 u zhvillua Programi i Parandalimit të Bullizmit Olweus, i cili synonte
+              të përfshinte të gjithë komunitetin shkollor në krijimin e një mjedisi më të sigurt.
             </p>
             <p>
               Programi nuk përqendrohej vetëm te sjellja e një nxënësi. Ai synonte të përfshinte
@@ -198,7 +199,8 @@ function HistoryPage() {
               komunitetit shkollor.
             </blockquote>
             <p className="history-source-inline">
-              Burimet: <HistorySource id="norway" label="qeveria norvegjeze" /> dhe{" "}
+              Burimet: <HistorySource id="norway" label="qeveria norvegjeze" />,{" "}
+              <HistorySource id="olweus-history" label="historiku i programit Olweus" /> dhe{" "}
               <HistorySource
                 id="olweus-program"
                 label="Programi i Parandalimit të Bullizmit Olweus"
@@ -279,9 +281,6 @@ function HistoryPage() {
                 </span>
               </p>
             </div>
-            <p>
-              <strong>Kur u shënua për herë të parë?</strong> Më 5 nëntor 2020.
-            </p>
             <p>
               <strong>Pse përfshihet edhe bullizmi kibernetik?</strong> Sepse bullizmi nuk kufizohet
               më vetëm në ambientet fizike të shkollës. Ai mund të vazhdojë përmes rrjeteve sociale,
