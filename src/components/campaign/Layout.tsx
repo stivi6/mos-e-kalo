@@ -92,6 +92,7 @@ export function Footer() {
         </Link>
       </div>
       <div className="container footer-bottom">
+        <span>© 2026 Stiven Arifaj · Shkolla Hermann Gmeiner</span>
         <span>Përmbajtja informuese mbështetet te referencat.</span>
         <Link to="/aktiviteti">Historia</Link>
         <Link to="/radha-jote">Radha jote</Link>
